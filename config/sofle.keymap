@@ -111,11 +111,11 @@
 
         Mac_lower {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans  &trans  &trans       &trans                               &trans             &trans  &trans  &trans             &trans         &trans
+&trans  &trans         &trans  &trans  &trans       &trans                               &trans             &trans  &trans  &kp RA(RS(NB_N7))  &kp RA(NB_N7)  &trans
+&trans  &trans         &trans  &trans  &trans       &kp RS(RA(NB_N8))                    &kp RS(RA(NB_N9))  &trans  &trans  &trans             &trans         &trans
+&trans  &kp RS(NB_N4)  &trans  &trans  &kp NB_PIPE  &trans             &trans    &trans  &trans             &trans  &trans  &trans             &kp NB_STAR    &trans
+                       &trans  &trans  &trans       &trans             &trans    &trans  &trans             &trans  &trans  &trans
             >;
 
             label = "MLow";
