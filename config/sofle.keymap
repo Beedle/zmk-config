@@ -79,10 +79,10 @@
         adjust_layer {
             display-name = "Valinor";
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &none  &none  &none  &none  &kp DELETE
-&ext_power EP_TOG  &none         &none         &none         &none         &none                         &none  &none  &none  &none  &none  &none
-&none              &none         &none         &none         &none         &none                         &none  &none  &none  &none  &none  &none
-&none              &none         &none         &none         &none         &none         &none    &none  &none  &none  &none  &none  &none  &tog 4
+&bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &none  &none  &none  &none   &kp DELETE
+&ext_power EP_TOG  &none         &none         &none         &none         &none                         &none  &none  &none  &none  &none   &none
+&none              &none         &none         &none         &none         &none                         &none  &none  &none  &none  &none   &none
+&none              &none         &none         &none         &none         &none         &none    &none  &none  &none  &none  &none  &tog 5  &tog 4
                                  &none         &none         &none         &none         &none    &none  &none  &none  &none  &none
             >;
         };
@@ -103,10 +103,22 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &mo 6   &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Mac";
+        };
+
+        Mac_lower {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "MLow";
         };
     };
 };
