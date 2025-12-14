@@ -8,15 +8,15 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
 
 # display
-    - name: gpeye
-      url-base: https://github.com/GPeye
+    - name: Beedle
+      url-base: https://github.com/Beedle
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
 # display
-    - name: hammerbeam-slideshow
-      remote: gpeye
+    - name: middle-earth-nice-view
+      remote: Beedle
       revision: main
   self:
     path: config
