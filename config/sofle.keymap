@@ -109,16 +109,19 @@
             label = "Mac";
         };
 
-        Mac_lower {
+        layer_7 {
+            display-name = "MLow";
             bindings = <
-&trans  &trans         &trans  &trans  &trans       &trans                               &trans             &trans  &trans  &trans             &trans         &trans
-&trans  &trans         &trans  &trans  &trans       &trans                               &trans             &trans  &trans  &kp RA(RS(NB_N7))  &kp RA(NB_N7)  &trans
-&trans  &trans         &trans  &trans  &trans       &kp RS(RA(NB_N8))                    &kp RS(RA(NB_N9))  &trans  &trans  &trans             &trans         &trans
-&trans  &kp RS(NB_N4)  &trans  &trans  &kp NB_PIPE  &trans             &trans    &trans  &trans             &trans  &trans  &trans             &kp NB_STAR    &trans
-                       &trans  &trans  &trans       &trans             &trans    &trans  &trans             &trans  &trans  &trans
+&kp F1             &kp F2          &kp F3             &kp F4        &kp F5                &kp F6                                     &kp F7                    &kp F8               &kp F9            &kp F10             &kp F11           &kp F12
+&kp NB_CARET       &kp NB_TILDE    &kp NB_MINUS       &kp NB_PLUS   &kp NB_LESS_THAN      &kp NB_LEFT_PARENTHESIS                    &kp NB_RIGHT_PARENTHESIS  &kp NB_GREATER_THAN  &kp NB_SLASH      &kp RA(RS(NB_N7))   &kp RA(NB_N7)     &kp NB_CURRENCY_SIGN
+&kp NB_POUND_SIGN  &kp NB_PERCENT  &kp NB_UNDERSCORE  &kp NB_ASTRK  &kp NB_DOUBLE_QUOTES  &kp RS(RA(NB_N8))                          &kp RS(RA(NB_N9))         &kp NB_PERIOD        &kp NB_COMMA      &kp NB_QUESTION     &kp NB_AMPERSAND  &kp NB_BROKEN_PIPE
+&kp NB_HASH        &kp RS(NB_N4)   &kp NB_EQUAL       &kp NB_GRAVE  &kp NB_PIPE           &kp NB_LEFT_BRACKET      &trans    &trans  &kp NB_RIGHT_BRACKET      &kp NB_COLON         &kp NB_SEMICOLON  &kp NB_EXCLAMATION  &kp NB_ASTERISK   &kp NB_SECTION
+                                   &trans             &trans        &trans                &trans                   &trans    &trans  &trans                    &trans               &trans            &trans
             >;
 
-            label = "MLow";
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
