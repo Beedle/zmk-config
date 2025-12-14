@@ -33,9 +33,14 @@
             then-layer = <3>;
         };
 
-        mac_adjust {
+        mac_low {
             if-layers = <5 1>;
             then-layer = <6>;
+        };
+
+        mac_adjust {
+            if-layers = <2 6>;
+            then-layer = <3>;
         };
     };
 
