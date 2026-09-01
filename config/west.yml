@@ -2,8 +2,12 @@ manifest:
   defaults:
     revision: v0.3
   remotes:
+    - name: beedle
+      url-base: https://github.com/Beedle
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
 
@@ -11,10 +15,17 @@ manifest:
     - name: gpeye
       url-base: https://github.com/GPeye
   projects:
+    - name: peace-and-love-board-zmk-config
+      remote: beedle
+      revision: main
+      path: boards/shields/peace_and_love
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: v0.3
 # display
     - name: hammerbeam-slideshow
       remote: gpeye
