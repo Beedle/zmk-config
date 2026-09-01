@@ -26,4 +26,14 @@ include:
   - board: nice_nano_v2
     shield: sofle_right nice_view_adapter nice_view_custom
   - board: nice_nano_v2
-    shield: settings_reset
+    shield: settings_reset  - board: seeeduino_xiao_ble
+    shield: peace_and_love_dongle dongle_display
+    artifact-name: dongle
+  - board: nice_nano_v2
+    shield: peace_and_love_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: left
+  - board: nice_nano_v2
+    shield: peace_and_love_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: right
